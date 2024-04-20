@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* style for main block */
+main {
+    width: 75vw;
+    margin: 10px auto;
+}
+
+/* style for the towers */
+#towers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pegs {
+    height: 36.5vw;
+    width: 20vw;
+    /* background-color: black; */
+    margin: 0 auto;
+    margin-top: 50px;
+    border-bottom: 5px solid rgb(126, 105, 77);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+/* positioning the sticks */
+.sticks {
+    height: 36.5vw;
+    width: 5px;
+    margin: 1px;
+    background-color: rgb(126, 105, 77);
+    position: absolute;
+    border-radius: 10px;
+}
+
+#stick-1 {
+    left: 24.65vw;
+    top: 14.5vh;
+}
+
+#stick-2 {
+    left: 49.65vw;
+    top: 14.5vh;
+}
+
+#stick-3 {
+    left: 74.65vw;
+    top: 14.5vh;
+}
+
+/* style for the blocks */
+.block {
+    height: 50px;
+    margin: 1px auto;
+    border: 1px solid rgb(55, 55, 157);
+    background-color: rgb(119, 119, 191);
+    border-radius: 5px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: translate(-50%, -50%); */
+}
+
+
+
+/* style for input section part */
+#input-section {
+    width: 40%;
+    margin: 10px auto;
+}
+
+/* style for setting the animation to the movements of the blocks */
+@keyframes moveBlock {
+    0% {
+        position: absolute;
+        top: 12vh;
+        left: 24vw;
+    }
+
+    20% {
+        top: 8vh;
+    }
+/* 
+    50% {
+    }
+
+    70% {
+    } */
+
+    100% {
+        background-color: blueviolet;
+        /* left: 100px; */
+    }
+}
